@@ -4,7 +4,7 @@
   "description": "A simple Tailwind CSS boilerplate",
   "scripts": {
     "dev": "tailwindcss build tailwind.css -o public/css/tailwind.output.css",
-    "build": "cross-env NODE_ENV=production postcss tailwind.css -o public/css/tailwind.output.css"
+    "build": "node atx.js && cross-env NODE_ENV=production postcss tailwind.css -o public/css/tailwind.output.css"
   },
   "keywords": [
     "tailwind",
@@ -15,7 +15,7 @@
     "minify",
     "minification"
   ],
-  "author": "Estevan Maito <ejmaito@gmail.com>",
+  "author": "Diego Vallejo",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "9.8.4",
